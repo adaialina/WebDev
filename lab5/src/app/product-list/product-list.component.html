@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="container-categories">
+    <div class="wrapper-items" *ngFor="let category of categories">
+      <button (click)="handleCategory(category.name)">
+        {{ category.name }}
+      </button>
+    </div>
+  </div>
+
+  <div class="container-products">
+    <div *ngFor="let product of allItems">
+      <app-product-item [product]="product"></app-product-item>
+    </div>
+  </div>
+</div>
