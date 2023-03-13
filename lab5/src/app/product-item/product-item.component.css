@@ -19,3 +19,22 @@ img {
   width: auto;
   height: 150px;
 }
+
+button {
+  background-color: white;
+  border-style: none;
+  cursor: pointer;
+}
+
+.buttons {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.buttons button {
+  width: 100px;
+}
