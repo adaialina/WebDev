@@ -8,10 +8,11 @@
       </a>
     </h3>
 
-    <p *ngIf="product.description">{{ product.description }}</p>
-    <p *ngIf="product.rating"><b>Rating:</b> {{ product.rating }}</p>
-    <p *ngIf="product.rating">
-      <b>Price:</b> {{ formatedPrice(product.price) }} ₸
-    </p>
+    <p>{{ product.description }}</p>
+    <p><b>Rating:</b> {{ product.rating }}</p>
+    <p><b>Price:</b><br> {{ formatedPrice(product.price) }}</p>
+    <div class="buttons">
+      <button (click)="handleDelete()">X</button>
+    </div>
   </div>
 </div>
